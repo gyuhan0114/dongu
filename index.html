@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동양미래대학교 동구 농구 동아리 홍보 영상</title>
+    
+    <style>
+        /* 기본 마진과 패딩 제거 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* 스크롤바 제거 */
+            background-color: #000; /* 동영상 로딩 전 배경을 검은색으로 설정 */
+        }
+        
+        /* 동영상을 화면 중앙에, 최대한 크게 표시하는 스타일 */
+        .video-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #promoVideo {
+            /* 화면 비율을 유지하면서 컨테이너를 가득 채우도록 설정 */
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            /* 동영상이 화면에 꽉 차게 보이도록 설정 (선택 사항: 원치 않으면 제거) */
+            object-fit: cover; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video 
+            id="promoVideo"
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            controls 
+        >
+            <source src="dongu.mp4" type="video/mp4">
+            
+            브라우저가 동영상을 지원하지 않습니다. 파일을 직접 다운로드하여 시청해 주세요.
+        </video>
+    </div>
+
+</body>
+</html>
